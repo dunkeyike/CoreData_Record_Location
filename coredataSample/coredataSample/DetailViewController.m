@@ -50,13 +50,8 @@
 	// 맵뷰에 표시할 지역 설정
 	[self.mapView setRegion:region animated:YES];
 	
-	
-	// 지도에 표시되는 핀을 커스텀 핀으로 이용
-	// 이번에는 사용하지 않음
-//	CustomAnnotation *tt = [[CustomAnnotation alloc] init];
-//	tt.coordinate = location;
 
-	// 지도 주석 객체(핀)
+	// 지도 주석 객체(핀)	
 	MKPointAnnotation *pin = [[MKPointAnnotation alloc] init];
 
 	// 테이블뷰에서 받아온 주소를 공백으로 나눠서 배열에 넣어두고
@@ -74,7 +69,6 @@
 	pin.coordinate = location;
 	// 핀에 표시될 문자열 넣어주고
 	pin.title = strTitle;
-	pin.subtitle = @"asdfasdf";
 	// 맵뷰에 핀 꽇아주면 끝!
 	[self.mapView addAnnotation:pin];
 }

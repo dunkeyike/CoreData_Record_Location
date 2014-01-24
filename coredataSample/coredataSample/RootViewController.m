@@ -64,11 +64,11 @@
 	NSError *error = nil;
 	
 	// 위에서 설정한대로 코어데이터안에서 데이터를 가져오게함
+	// SQL에서 쿼리를 날리는것과 비슷
 	NSMutableArray *arrResults = [[managedObjContext executeFetchRequest:request error:&error] mutableCopy];
 	if (arrResults == nil) {
 		// error!!
 	}
-	
 	
 	// 가져온 데이터를 테이블뷰에서 사용할 객체에 대입
 	eventsArray = arrResults;
@@ -76,20 +76,23 @@
 }
 
 #pragma mark - Table view data source
-
+// 테이블뷰 섹션갯수 반환
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
 
+// 각섹션의 셀의 갯수 반환
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [eventsArray count];
 }
 
+// 각셀의 높이 반환
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 	return 70;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	// 날짜 표시방식 설정

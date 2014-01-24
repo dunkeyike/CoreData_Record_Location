@@ -44,8 +44,7 @@
 		C09500171891FF1600CC9748 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		C09500181891FF1600CC9748 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		C09500191891FF1600CC9748 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
-		C095001C18920D3900CC9748 /* CustomAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
-		C095001D18922AE000CC9748 /* coredataSample 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "coredataSample 2.xcdatamodel"; sourceTree = "<group>"; };
+		C095001D18922AE000CC9748 /* coredataSample 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "coredataSample 2.xcdatamodel"; sourceTree = "<group>"; };
 		C0A1AB7E1890F7A500E61199 /* coredataSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coredataSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A1AB811890F7A500E61199 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0A1AB831890F7A500E61199 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,7 +142,6 @@
 				C09500171891FF1600CC9748 /* DetailViewController.h */,
 				C09500181891FF1600CC9748 /* DetailViewController.m */,
 				C09500191891FF1600CC9748 /* DetailViewController.xib */,
-				C095001C18920D3900CC9748 /* CustomAnnotation.h */,
 				C0A1AB981890F7A500E61199 /* Images.xcassets */,
 				C0A1AB951890F7A500E61199 /* coredataSample.xcdatamodeld */,
 				C0A1ABBB189101EB00E61199 /* Event.h */,
