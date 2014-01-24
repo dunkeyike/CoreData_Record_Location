@@ -7,7 +7,6 @@
 //
 
 #import "DetailViewController.h"
-#import "CustomAnnotation.h"
 
 @interface DetailViewController ()
 
@@ -51,7 +50,7 @@
 	[self.mapView setRegion:region animated:YES];
 	
 
-	// 지도 주석 객체(핀)	
+	// 지도 주석 객체(핀)
 	MKPointAnnotation *pin = [[MKPointAnnotation alloc] init];
 
 	// 테이블뷰에서 받아온 주소를 공백으로 나눠서 배열에 넣어두고
