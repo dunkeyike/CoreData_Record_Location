@@ -26,8 +26,10 @@
 		C0A1ABAD1890F7A500E61199 /* coredataSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A1ABAC1890F7A500E61199 /* coredataSampleTests.m */; };
 		C0A1ABB71890F7DF00E61199 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1ABB61890F7DF00E61199 /* CoreLocation.framework */; };
 		C0A1ABBA1890F97D00E61199 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A1ABB91890F97D00E61199 /* RootViewController.m */; };
-		C0A1ABBD189101EB00E61199 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A1ABBC189101EB00E61199 /* Event.m */; };
 		C0A1ABC71891258100E61199 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A1ABC61891258100E61199 /* MapKit.framework */; };
+		C0DF27E51893A4830036CA6C /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DF27E41893A4830036CA6C /* Event.m */; };
+		C0DF27E81893A4840036CA6C /* GolfEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DF27E71893A4840036CA6C /* GolfEvent.m */; };
+		C0DF27EB1893A4840036CA6C /* HanabiEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DF27EA1893A4840036CA6C /* HanabiEvent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,9 +68,13 @@
 		C0A1ABB61890F7DF00E61199 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C0A1ABB81890F97D00E61199 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		C0A1ABB91890F97D00E61199 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		C0A1ABBB189101EB00E61199 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		C0A1ABBC189101EB00E61199 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		C0A1ABC61891258100E61199 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C0DF27E31893A4830036CA6C /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		C0DF27E41893A4830036CA6C /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		C0DF27E61893A4840036CA6C /* GolfEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GolfEvent.h; sourceTree = "<group>"; };
+		C0DF27E71893A4840036CA6C /* GolfEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GolfEvent.m; sourceTree = "<group>"; };
+		C0DF27E91893A4840036CA6C /* HanabiEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanabiEvent.h; sourceTree = "<group>"; };
+		C0DF27EA1893A4840036CA6C /* HanabiEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanabiEvent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +150,12 @@
 				C09500191891FF1600CC9748 /* DetailViewController.xib */,
 				C0A1AB981890F7A500E61199 /* Images.xcassets */,
 				C0A1AB951890F7A500E61199 /* coredataSample.xcdatamodeld */,
-				C0A1ABBB189101EB00E61199 /* Event.h */,
-				C0A1ABBC189101EB00E61199 /* Event.m */,
+				C0DF27E91893A4840036CA6C /* HanabiEvent.h */,
+				C0DF27EA1893A4840036CA6C /* HanabiEvent.m */,
+				C0DF27E61893A4840036CA6C /* GolfEvent.h */,
+				C0DF27E71893A4840036CA6C /* GolfEvent.m */,
+				C0DF27E31893A4830036CA6C /* Event.h */,
+				C0DF27E41893A4830036CA6C /* Event.m */,
 				C0A1AB8A1890F7A500E61199 /* Supporting Files */,
 			);
 			path = coredataSample;
@@ -276,10 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DF27E81893A4840036CA6C /* GolfEvent.m in Sources */,
 				C0A1AB971890F7A500E61199 /* coredataSample.xcdatamodeld in Sources */,
 				C0A1AB941890F7A500E61199 /* AppDelegate.m in Sources */,
-				C0A1ABBD189101EB00E61199 /* Event.m in Sources */,
+				C0DF27E51893A4830036CA6C /* Event.m in Sources */,
 				C0A1ABBA1890F97D00E61199 /* RootViewController.m in Sources */,
+				C0DF27EB1893A4840036CA6C /* HanabiEvent.m in Sources */,
 				C0A1AB901890F7A500E61199 /* main.m in Sources */,
 				C095001A1891FF1600CC9748 /* DetailViewController.m in Sources */,
 			);

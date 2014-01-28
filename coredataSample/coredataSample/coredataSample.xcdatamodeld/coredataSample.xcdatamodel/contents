@@ -5,8 +5,21 @@
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="locationname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="event_golfEvent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GolfEvent" inverseName="golfEvent_event" inverseEntity="GolfEvent" syncable="YES"/>
+        <relationship name="event_hanabiEvent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HanabiEvent" inverseName="hanabiEvent_event" inverseEntity="HanabiEvent" syncable="YES"/>
+    </entity>
+    <entity name="GolfEvent" representedClassName="GolfEvent" syncable="YES">
+        <attribute name="golfEventName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="golfEvent_event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="event_golfEvent" inverseEntity="Event" syncable="YES"/>
+    </entity>
+    <entity name="HanabiEvent" representedClassName="HanabiEvent" syncable="YES">
+        <attribute name="eventName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="open" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="hanabiEvent_event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="event_hanabiEvent" inverseEntity="Event" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Event" positionX="-1127" positionY="-6264" width="128" height="103"/>
+        <element name="Event" positionX="-650" positionY="-5530" width="128" height="118"/>
+        <element name="HanabiEvent" positionX="-380" positionY="-5427" width="128" height="88"/>
+        <element name="GolfEvent" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

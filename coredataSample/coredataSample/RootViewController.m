@@ -9,7 +9,7 @@
 #import "RootViewController.h"
 #import "Event.h"
 #import "DetailViewController.h"
-
+#import "HanabiEvent.h"
 @interface RootViewController ()
 
 @end
@@ -204,7 +204,7 @@
 #pragma mark - Core Location manager delegate
 // 위치정보가 업데이트 될때마다 불림
 - (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-	
+	NSLog(@"didUpdateLocations");
 	// 아이폰 설정에서 위치정보 승인을 했는지 판단
 	if([CLLocationManager locationServicesEnabled] == YES){
 		// 위치정보를 취득 할수 있으니 추가 버튼을 유효화
@@ -245,7 +245,15 @@
 		[event setLatitude:[NSNumber numberWithDouble:coordinate.latitude]];
 		[event setCreationDate:[NSDate date]];
 		[event setLocationname:locationName];
+
 		
+		HanabiEvent *Hevent = (HanabiEvent*)[NSEntityDescription insertNewObjectForEntityForName:@"HanabiEvent" inManagedObjectContext:managedObjContext];
+		[Hevent setEventName:@"tetetete"];
+		[Hevent setOpen:[NSNumber numberWithBool:YES]];
+	
+		GolfEvent *gEvent = (GolfEvent *)[NSEntityDescription insertNewObjectForEntityForName:@"GolfEvent" inManagedObjectContext:managedObjContext];
+		
+		[event setEvent_hanabiEvent:Hevent];
 		// 코어데이터에 저장!
 		NSError *saveError = nil;
 		if (![managedObjContext save:&saveError]) {
